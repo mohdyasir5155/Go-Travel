@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), 
+                url("background.jpg");
+
+  background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.menu a{ 
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+
+.menu a:hover::before {
+    width: 90%;
+}
+
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: .4s linear;
+}
+
+.register a:hover{
+    background: transparent;
+    border: 2px solid indianred;
+}
+
+.sec-text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.sec-text span{
+    letter-spacing: 5px;
+}
+
+.sec-text h1{
+    font-size: 3.6em;
+}
+
+.sec-text a{
+    text-decoration: none;
+    background-color:indianred ;
+    border-radius: 8px;
+    color: white;
+    padding: 20px 10px;
+    font-size: 15px;
+    transition: 0.4s linear;
+}
+
+.sec-text a:hover{
+    background: transparent;
+    border: 2px solid indianred ;
+}
+}
